@@ -8,8 +8,8 @@ class Stack:
     pop: remove element from stack.
     print: prints itself.
     '''
-    def __init__(self):
-        self.list = []
+    def __init__(self,*elements):
+        self.list = list(elements)
 
     def push(self,*elements):
         for element in elements:
@@ -17,6 +17,9 @@ class Stack:
 
     def pop(self):
         return self.list.pop()
+
+    def isempty(self):
+        return not bool(len(self.list))
 
     def print(self):
         print(self.list)

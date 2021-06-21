@@ -8,29 +8,33 @@ class Queue:
     dequeue: remove element from queue.
     print: prints itself.
     '''
-    def __init__(self):
-        self.list = []
+    def __init__(self,*elements):
+        self.list = list(elements)
 
     def enqueue(self,*elements):
         for element in elements:
             self.list.append(element)
 
     def dequeue(self):
-        return self.list.pop(1)
+        return self.list.pop(0)
     
+    def isempty(self):
+        return not bool(len(self.list))
+
     def print(self):
         print(self.list)
 
 # q = Queue()
-
+# print(q.isempty())
 # q.enqueue(2,2,23,3,4,5,5)
 # q.print()
+# print(q.isempty())
 # q.dequeue()
 # q.print()
 
 class PriorityQueue:
-    def __init__(self):
-        self.list = []
+    def __init__(self,*elements):
+        self.list = list(elements)
 
     def enqueue(self,element,priority):
         if len(self.list) == 0:
@@ -47,6 +51,9 @@ class PriorityQueue:
     def dequeue(self):
         return self.list[0].pop(1)
     
+    def isempty(self):
+        return not bool(len(self.list))
+
     def print(self):
         self.list.sort()
         print(self.list)
