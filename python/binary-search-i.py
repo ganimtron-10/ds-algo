@@ -30,6 +30,6 @@ def binarysearchi(arr,element):
     else:
         return None
 
-
-# l = [1, 2, 54, 56, 63, 64, 75, 84, 86, 543, 987, 2624, 2665]
-# print(binarysearchi(l,2665))
+if __name__ == "__main__":
+    l = [1, 2, 54, 56, 63, 64, 75, 84, 86, 543, 987, 2624, 2665]
+    print(binarysearchi(l,2665))

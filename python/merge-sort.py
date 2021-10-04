@@ -50,6 +50,6 @@ def mergesort(arr):
         right = mergesort(right)
     return merge(left,right)
         
-
-# l = [48,79,12,29,20,78,34,64,86,23]
-# print(mergesort(l))
+if __name__ == "__main__":
+    l = [48,79,12,29,20,78,34,64,86,23]
+    print(mergesort(l))

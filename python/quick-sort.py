@@ -49,6 +49,6 @@ def partion(l,h):
     return j
 
 
-
-# a = [17, 74, 102, 149, 398, 792, 797, 834, 987,float('inf')]
-# print(quicksort(0,len(a)-1))
+if __name__ == "__main__":
+    a = [17, 74, 9, 149, 398, 792, 7128, 834, 987,float('inf')]
+    print(quicksort(0,len(a)-1))
