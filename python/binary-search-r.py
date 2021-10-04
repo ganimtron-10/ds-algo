@@ -38,6 +38,6 @@ def binarysearchr(arr,element,l,h):
             return binarysearchr(arr,element,mid+1,h)
 
 
-
-# l = [17, 74, 102, 149, 398, 792, 797, 834, 987]
-# print(binarysearchr(l,987,0,len(l)-1))
+if __name__ == "__main__":
+    l = [17, 74, 102, 149, 398, 792, 797, 834, 987]
+    print(binarysearchr(l,987,0,len(l)-1))
