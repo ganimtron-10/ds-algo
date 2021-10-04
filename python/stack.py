@@ -6,6 +6,7 @@ class Stack:
     ---------
     push: add element to stack.
     pop: remove element from stack.
+    isempty: checks whether stack is empty.
     print: prints itself.
     '''
     def __init__(self,*elements):
