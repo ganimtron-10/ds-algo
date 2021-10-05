@@ -1,6 +1,22 @@
 from queue import Queue
 
 def bfs(graph, start):
+    '''
+    Using Breadth First Search to traverse Graph.
+    Method: iterative
+
+    Parameter
+    ---------
+    graph: (dictionary of list)
+    A dictionary of list on which we are going to apply bfs
+    
+    start: (key of dictionary)
+    The element from which we are starting the traverse
+
+    Returns
+    -------
+    (list) List of points in traverse order
+    '''
     queue = Queue(start)
     result = []
     result.append(start)

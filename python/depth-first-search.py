@@ -1,6 +1,22 @@
 from stack import Stack
 
 def dfs(graph, start):
+    '''
+    Using Depth First Search to traverse Graph.
+    Method: iterative
+
+    Parameter
+    ---------
+    graph: (dictionary of list)
+    A dictionary of list on which we are going to apply dfs
+    
+    start: (key of dictionary)
+    The element from which we are starting the traverse
+
+    Returns
+    -------
+    (list) List of points in traverse order
+    '''
     result = []
     result.append(start)
     stack = Stack(start)
