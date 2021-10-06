@@ -20,12 +20,13 @@ class PriorityQueue:
                 if priority == self.list[i][0]:
                     self.list[i].append(element)
                     break
-                else:
-                    self.list.append([priority,element])
-                    break
+            else:
+                self.list.append([priority,element])
 
     def dequeue(self):
-        return self.list[0].pop(1)
+        for i in self.list:
+            if len(i) != 1:
+                return i.pop(1)
     
     def isempty(self):
         return not bool(len(self.list))
@@ -42,7 +43,7 @@ if __name__ == "__main__":
     q.print()
     q.enqueue("3", 2)
     q.print()
-    q.enqueue("4", 1)
+    q.enqueue("4", 2)
     q.print()
     q.dequeue()
     q.print()
