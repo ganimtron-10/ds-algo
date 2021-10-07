@@ -1,3 +1,8 @@
 #python ignoreables
 python/__pycache__
+
+#c++ ignoreables
+cpp/cpp.cpp
+
+#sublime ignoreables
 ds-algo.sublime-workspace
