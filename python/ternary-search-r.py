@@ -1,6 +1,4 @@
-import math
-
-def ternarysearch(arr,element,l,h):
+def ternarysearchr(arr,element,l,h):
     '''
     Using Ternary Search to find the element in list.
     Method: recursive
@@ -33,14 +31,14 @@ def ternarysearch(arr,element,l,h):
             return mid2
 
         if arr[mid1] > element:
-            return ternarysearch(arr, element, l, mid1-1)
+            return ternarysearchr(arr, element, l, mid1-1)
         elif arr[mid2] < element:
-            return ternarysearch(arr, element, mid2+1, h)
+            return ternarysearchr(arr, element, mid2+1, h)
         else:
-            return ternarysearch(arr, element, mid1+1, mid2-1)
+            return ternarysearchr(arr, element, mid1+1, mid2-1)
 
     return None
 
 if __name__ == "__main__":
     l = [17, 74, 102, 149, 398, 792, 797, 834, 987]
-    print(ternarysearch(l,1,0,len(l)-1))
+    print(ternarysearchr(l,1,0,len(l)-1))
