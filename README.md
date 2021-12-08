@@ -1,2 +1,2 @@
 # DS-Algo
-Data-Structures and Algorithms implented in most of Programming Languages.
+Practicing Data-Structures and Algorithms by implementing them. 
